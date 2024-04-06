@@ -1,0 +1,36 @@
+:root {
+    --primary: #1e1b4b;
+    --secondary: #6366f1;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+table {
+    width:1000px;
+    height: 1000px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    box-shadow:
+    0 0 60px 30px var(--secondary),  /* inner white */
+    0 0 100px 60px var(--secondary), /* middle magenta */
+    0 0 140px 90px var(--secondary); /* outer cyan */
+}
+
+.cell {
+    width: 8px;
+    height: 8px;
+    border: 1px;
+}
+
+.cellfilled {
+    background-color: var(--secondary);
+}
+
+.empty {
+    background-color: var(--primary);
+}
